@@ -1,23 +1,28 @@
+/* Author: Tri Le
+ * CSS file for ITMD-361 Lab 6 - Turn the provided HTML and CSS files
+ * into separate top and side navigation bars.
+ */
 
+/* Main Navigation Bar */
 #main-navbar {
   background-color: blue;
   overflow: hidden;
 }
 
 #main-navbar ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  float: left;
   position: relative;
   left:50%;
-
-  display: inline-block;
-  vertical-align: top;
+  float: left;
 }
 
 #main-navbar ul li {
   float: left;
+  position: relative;
+  right: 50%;
+  display: block;
 }
 
 #main-navbar ul li a {
@@ -31,10 +36,14 @@
   background-color: #000;
 }
 
+/* Navigation Bar Container */
 #navbar-container {
+  float: left;
   width: 100%;
+  position: relative;
 }
 
+/* Highlight the Current Page */
 #onpage {
   text-decoration: underline overline;
 }
